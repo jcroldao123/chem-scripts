@@ -31,6 +31,15 @@ chem_scripts/
 │   ├── lowercase_and_deduplicate.py
 │   ├── cleanup_and_dedup_chk.py
 │   └── clean_temp_files.py
+│
+├── scripts/
+│   ├── gauss0opt2sptd-stable.sh
+│   ├── contribeval.sh
+│   ├── gamessrun-stable.sh
+│   ├── gamesschoirun-stable.sh
+│   ├── everteval.sh
+│   ├── molcasrun-stable.sh
+│   └── molcasrun_series-stable.sh
 ```
 
 Installation:
@@ -70,6 +79,20 @@ chem-eval-gaussian --prefix mymol --output results.xlsx
 chem-clean-temp
 ```
 
+Shell Scripts:
+--------------
+Additional bash scripts for automated preparation, submission, and evaluation:
+
+```bash
+bash scripts/gauss0opt2sptd-stable.sh     # Generate Gaussian .gjf files from optimized logs
+bash scripts/contribeval.sh              # Run full contribution extraction pipeline
+bash scripts/gamessrun-stable.sh         # Submit GAMESS jobs via PBS
+bash scripts/gamesschoirun-stable.sh     # Alternative GAMESS run setup with custom scratch
+bash scripts/everteval.sh                # Evaluate electronic state orderings
+bash scripts/molcasrun-stable.sh         # Submit a single OpenMolcas job
+bash scripts/molcasrun_series-stable.sh  # Generate and optionally run a series of OpenMolcas jobs
+```
+
 Using the Makefile:
 -------------------
 You can use `make` for common tasks:
@@ -81,6 +104,22 @@ make zip            # Create chem-scripts.zip
 make uninstall      # Remove virtualenv
 ```
 
-License:
---------
-MIT License (or your preferred license)
+Documentation:
+--------------
+To generate HTML documentation using Sphinx:
+
+```bash
+pip install sphinx
+sphinx-quickstart docs
+```
+
+Then edit `docs/index.rst` and add modules with:
+
+```bash
+sphinx-apidoc -o docs/source chem_scripts
+cd docs
+make html
+```
+
+The documentation will be built in `docs/_build/html/index.html`.
+
