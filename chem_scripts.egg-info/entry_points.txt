@@ -1,0 +1,15 @@
+[console_scripts]
+chem-average-contributions = chem_scripts.contributions.average_contributions:main
+chem-average-occupations = chem_scripts.occupations.average_occupation_analysis:main
+chem-clean-temp = chem_scripts.maintenance.clean_temp_files:main
+chem-cleanup = chem_scripts.maintenance.cleanup_and_dedup_chk:main
+chem-copy-logs = chem_scripts.gaussian.copy_valid_logfiles:main
+chem-detect-changes = chem_scripts.contributions.detect_contribution_changes:main
+chem-eval-gaussian = chem_scripts.gaussian.evaluate_gaussian_outputs:main
+chem-extract-contributions = chem_scripts.contributions.extract_contributions:main
+chem-extract-occupations = chem_scripts.occupations.extract_occupations:main
+chem-final-xyz = chem_scripts.gaussian.extract_final_coordinates:main
+chem-lowercase = chem_scripts.maintenance.lowercase_and_deduplicate:main
+chem-organize-contributions = chem_scripts.contributions.organize_contributions:main
+chem-rename-files = chem_scripts.gaussian.update_filenames:main
+chem-reorder-occupations = chem_scripts.occupations.reorder_occupation_table:main

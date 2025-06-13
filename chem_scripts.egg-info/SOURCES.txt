@@ -1,0 +1,7 @@
+setup.py
+chem_scripts.egg-info/PKG-INFO
+chem_scripts.egg-info/SOURCES.txt
+chem_scripts.egg-info/dependency_links.txt
+chem_scripts.egg-info/entry_points.txt
+chem_scripts.egg-info/requires.txt
+chem_scripts.egg-info/top_level.txt
