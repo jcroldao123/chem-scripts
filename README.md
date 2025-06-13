@@ -4,14 +4,19 @@ Chem Scripts
 ============
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This repository contains a collection of Python scripts designed to support quantum chemistry workflows, file management, and data extraction—especially for simulations using Gaussian and NAMD.
 =======
 This repository contains a collection of Python and Bash scripts designed to support quantum chemistry workflows, especially for simulations using Gaussian, NAMD, GAMESS, and Molcas.
 >>>>>>> 24663b9 (Initial commit: chem scripts, docs, and tools)
+=======
+This repository contains a collection of Python scripts designed to support quantum chemistry workflows, file management, and data extraction—especially for simulations using Gaussian and NAMD.
+>>>>>>> 8cb8289 (WIP: preparando push final para GitHub)
 
 Project Structure:
 ------------------
 
+<<<<<<< HEAD
 ```
 chem_scripts/
 <<<<<<< HEAD
@@ -183,3 +188,10 @@ License:
 MIT License
 >>>>>>> 24663b9 (Initial commit: chem scripts, docs, and tools)
 
+=======
+...
+
+License:
+--------
+MIT License (or your preferred license)
+>>>>>>> 8cb8289 (WIP: preparando push final para GitHub)
